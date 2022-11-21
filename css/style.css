@@ -1,0 +1,384 @@
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilos del body*/
+
+body{
+    background-color: rgb(16, 15, 13);
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Estilos del header*/
+
+header{
+    background-color: rgb(237, 27, 36);
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-logo{
+    width: 120px;
+    height: 120px;
+}
+
+.nav-color {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+h1{
+    color: rgb(237, 27, 36);
+    font-weight: bold;
+    font-size: 200px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+/*Estilos del footer*/
+
+.pie-de-pagina{
+    width: 100%;
+    background-color:  rgb(237, 27, 36);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+
+.pie-de-pagina .grupo-1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:1rem;
+    padding: 40px;
+
+}
+
+.pie-de-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: felx;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-de-pagina .grupo-1 .box h2{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-de-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-de-pagina .grupo-1 .red-social a:hover{
+    color: rgb(201, 12, 18)
+}
+
+.pie-de-pagina .grupo-2{
+    background-color: rgb(201, 12, 18);
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.ir-arriba a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+main{
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.container{
+    margin-top: 20px;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+/*Estilos del main - pagina index */
+
+.informacion_nombre{
+    color: rgb(237, 27, 36);
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    animation-name: img-name;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    }
+
+    @keyframes img-name {
+       0% {
+        transform: scale(1);
+       }
+       100% {
+        transform: scale(1.3);
+    }
+}
+
+h2{
+    color:rgb(237, 27, 36);
+    font-weight:lighter;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h3{
+    color:white;
+    font-weight:lighter;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+#p_main {
+    color: crimson;
+    font-weight:lighter;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.informacion-servicios-desktop{
+    display: none;
+}
+
+.row p{
+    color: white;
+    font-weight:lighter;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*Estilos del main - pagina juegos y pagina eventos*/
+
+.juegos{
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.juegos p{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.contenedor2 {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.juegosPlataformas img{
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+/*Estilos del main imagenes- pagina juegos*/
+
+#foto1{
+    width: 500px;
+    height: 350px;
+    text-align: left;
+    margin: 20px;
+}
+
+#foto2{
+    width: 500px;
+    height: 350px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+#foto3{
+    width: 500px;
+    height: 350px;
+    text-align: end;
+    margin: 20px;
+}
+
+/*Estilo del main imagenes - pagina juegos y pagina eventos*/
+
+.juegosPlataformas img{
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*Estilos del main - pagina noticias*/
+.contenedor3 img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.foto4{
+    width: 800px;
+    height: 550px;
+    margin: 20px;
+}
+
+.noticias ul li{
+    color: white;
+    font-weight:lighter;
+    font-size: 45px;
+    padding-bottom: 30px;
+    list-style: none;
+}
+
+.noticias img {
+    width: 200px;
+    height: 200px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    animation-name: img-noticia;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    }
+
+    @keyframes img-noticia {
+       0% {
+        transform: scale(1);
+       }
+       100% {
+        transform: scale(1.3);
+    }
+}
+
+.noticias ul li a{
+    color: white;
+}
+
+/*Estilos del main - pagina contacto*/
+
+.contenedor4{
+    display: inline;
+    max-width: 100%;
+}
+
+h4{
+    color:white;
+    font-weight:lighter;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.mapa{
+    text-align: left;
+}
+
+.formulario_contacto{
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    display: block;
+}
+
+/* mq - desktop */
+@media screen and (min-width:768px){
+    header {
+        background-color: rgb(237, 27, 36);
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .informacion-servicios-mobile {
+        display: none;
+    }
+
+    .informacion-servicios-desktop{
+        display: grid;
+        display: inline;   
+    }
+
+    
+    .informacion-servicios-desktop{
+        grid-area: img;
+    }
+
+    .servicios-dibujos img:hover{
+        filter: drop-shadow(2px 2px 2px whitesmoke);
+        
+    }
+
+    /* Estilos del footer*/
+
+    .pie-de-pagina .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:3rem;
+        padding: 45px 0px;
+    }
+
+    /*sitio juegos*/
+
+    /*sitio contacto*/
+    .contenedor4{
+        display: flex;
+        max-width: 100%;
+    }
+
+
+}
+

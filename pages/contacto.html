@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--Link fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/755b8da1e0.js" crossorigin="anonymous"></script>
+    <!--Link css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dojo Gaming</title>
+</head>
+<body>
+    <div class="contenedor">
+        <!--Ecanbezado de proyecto-->
+        <header id="top">
+            <div>
+                <img class="img-logo" src="../img/Dojo_sinfondo.png" alt="Logo_Dojo" >
+            </div>
+            <nav class="navbar navbar-expand-lg nav-color">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/juegos.html">JUEGOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/eventos.html">EVENTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+            
+        <main>
+            <h2>¡CONTACTATE CON NOSOTROS!</h2>
+    
+            <div class="contenedor4">
+                <h4>Visitanos en...</h4>
+    
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13618.697231575963!2d-64.5041886669595!3d-31.423098302428407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d67a0d098a6b7%3A0x7ddf750db9014f2a!2sDojo%20Gaming!5e0!3m2!1ses-419!2sar!4v1667013648233!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!--Formulario-->
+            
+                <h4>Envíanos tu consulta</h4>
+                <form action="" class="formulario_contacto">
+                    <fieldset>
+                        <legend>Completa tus datos</legend>
+                        <div>
+                            <br>
+                                <label for="nombre">Nombre:</label>	
+                                <input type="text" placeholder="Juan Lopez" />
+                            <br>
+                                <label for="email">Email:</label>
+                                <input type="text" placeholder="juanlopez@gmail.com">
+                            <br>
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" placeholder="Quiero más infromación">
+                            <br>
+                                <label type="consulta" id="consulta">Consulta:</label>
+                                <textarea name="textarea" rows="10" cols="50">Tu consulta</textarea>
+                            <br>
+                                <input type="submit">
+                            <br>
+                                <input type="reset">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    
+        <!--Pie de pagina-->
+        <footer class="pie-de-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">  
+                            <img src="../img/Dojo_sinfondo.png" alt="Logo_Dojo">
+                        </a>  
+                    </figure>
+                </div>
+                <div class="box">
+                    <h3>ENCONTRANOS EN</h3>
+                    <P>Los Artesanos 157</P>
+                    <p>Villa Carlos Paz</p>
+                    <p>Córdoba</p>
+                </div>
+                <div class="box">
+                    <h3>SIGUENOS </h3>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/Dojo-Gaming-VCP-110337208235345/?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+                        <a href="https://instagram.com/dojo_gaming_vcp?igshid=ZmVmZTY5ZGE=" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-2">
+                <small>&copy; 2022 <b> Dojo Gaming </b> - Todos los derechos reservados.</small>
+            </div>
+            
+            <div class="ir-arriba">
+                <a href="#top" >^</a> <!--Estatico-->
+            </div>   
+        </footer>
+
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
