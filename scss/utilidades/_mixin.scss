@@ -1,0 +1,43 @@
+//mixin
+
+@mixin medidas ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+}
+
+@mixin estilosTitulos{
+    font-family: 'Syncopate', sans-serif;
+    font-size: bold;
+    color: $color-texto;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+@mixin estilosSubtitulosh2{
+    font-size: lighter;
+    color: $color-texto-2;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+@mixin estilosSubtitulosh3{
+    font-size: lighter;
+    color: $color-texto-2;
+    font-size: 1.5rem;
+    text-align: center;
+}

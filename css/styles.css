@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos del body*/
+body {
+  background-color: #100F0D;
+  min-height: 100vw;
+  width: 100vw;
+  overflow-x: hidden; }
+
+html {
+  scroll-behavior: smooth; }
+
+/*Estilos del footer*/
+.pie-de-pagina {
+  width: 100%;
+  background-color: #ED1B24;
+  color: #FFFFFF;
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center; }
+  .pie-de-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    padding: 40px; }
+  .pie-de-pagina .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center; }
+  .pie-de-pagina img {
+    width: 250px; }
+  .pie-de-pagina h3 {
+    margin-bottom: 25px;
+    font-size: 1rem; }
+  .pie-de-pagina p {
+    color: #efefef;
+    font-size: 0.7rem;
+    margin-bottom: 20px; }
+  .pie-de-pagina .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 20px;
+    line-height: 45px;
+    color: #efefef;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease; }
+  .pie-de-pagina a:hover {
+    color: #C90C12; }
+  .pie-de-pagina .grupo-2 {
+    background-color: #C90C12;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1rem; }
+  .pie-de-pagina .ir-arriba a {
+    text-decoration: none;
+    color: #100F0D;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0; }
+  @media only screen and (min-width: 768px) {
+    .pie-de-pagina {
+      /* Estilos del footer*/ }
+      .pie-de-pagina .pie-de-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem;
+        padding: 45px 0px; }
+      .pie-de-pagina .box h3 {
+        margin-bottom: 25px;
+        font-size: 1.5rem; }
+      .pie-de-pagina .box p {
+        color: #efefef;
+        font-size: 1rem;
+        margin-bottom: 20px; } }
+
+/*estilos de header*/
+header {
+  background-color: #ED1B24;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 1.5em; }
+  header .img-logo {
+    width: 120px;
+    height: 120px; }
+  header .navbar-img {
+    width: 3.4rem; }
+  header .navbar-brand {
+    align-items: center; }
+  header .navbar nav a {
+    color: #FFFFFF; }
+  header .container-fluid .navbar-nav {
+    display: flex;
+    justify-content: space-between; }
+
+main .informacion_nombre {
+  font-family: 'Syncopate', sans-serif;
+  font-size: bold;
+  color: #ED1B24;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 30px;
+  animation-name: img-name;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 1s; }
+
+@keyframes img-name {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.3); } }
+
+main .containertitulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+main h2 {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+main .informacion-servicios-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+main h3 {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+main #p_main p {
+  font-family: 'Syncopate', sans-serif;
+  font-size: bold;
+  color: #ED1B24;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  padding-top: 50px;
+  padding-bottom: 30px; }
+
+main .row p {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+main .container-op hr {
+  background-color: #ED1B24;
+  height: 8px; }
+
+@media only screen and (min-width: 768px) {
+  main header {
+    background-color: #ED1B24;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center; }
+  main .navbar nav a {
+    color: #FFFFFF;
+    font-size: 2rem; }
+  main .informacion-servicios-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    main .informacion-servicios-mobile .container {
+      margin-top: 0%;
+      margin-bottom: 2%; }
+    main .informacion-servicios-mobile img:hover {
+      filter: drop-shadow(2px 2px 2px #FFFFFF); } }
+
+main .juegos {
+  text-align: center;
+  width: auto;
+  height: auto; }
+
+main p {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 1.5rem; }
+
+main .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  main .cards p {
+    color: #ED1B24; }
+  main .cards .card {
+    margin: 15px; }
+
+main .contenedor2 {
+  display: none; }
+
+main .juegosPlataformas img {
+  display: none; }
+
+@media only screen and (min-width: 768px) {
+  main .cards {
+    display: none; }
+  main .contenedor2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; }
+    main .contenedor2 img {
+      max-width: 100%;
+      margin-top: 20px; }
+    main .contenedor2 #foto1 {
+      width: 500px;
+      height: 350px;
+      text-align: left;
+      margin: 20px; }
+    main .contenedor2 #foto2 {
+      width: 500px;
+      height: 350px;
+      text-align: center;
+      margin: 20px; }
+    main .contenedor2 #foto3 {
+      width: 500px;
+      height: 350px;
+      text-align: end;
+      margin: 20px; }
+  main .juegosPlataformas img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px; } }
+
+main .contenedor3 img {
+  display: inline-block;
+  max-width: 100%; }
+
+main .foto4 {
+  width: 800px;
+  height: 550px;
+  margin: 20px; }
+
+main .noticias ul li {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 30px;
+  list-style: none; }
+
+main .noticias ul a {
+  color: #FFFFFF;
+  text-decoration: none; }
+
+main .noticias ul img {
+  width: 200px;
+  height: 200px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  animation-name: img-noticia;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-delay: 1s; }
+
+@keyframes img-noticia {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.3); } }
+
+main .contenedor3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%; }
+
+main .juegos h2 {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center; }
+
+main .eventos img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 25px; }
+
+main .contenedor4 {
+  display: inline;
+  max-width: 100%; }
+
+main h4 {
+  font-size: lighter;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 15px; }
+
+main .mapa {
+  text-align: left; }
+
+main .formulario_contacto {
+  color: #FFFFFF;
+  font-size: 1rem;
+  padding: 20px;
+  display: block; }
+  main .formulario_contacto legend {
+    font-size: 0.7rem; }
+
+@media only screen and (min-width: 768px) {
+  main .contenedor4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 50px;
+    padding: 20px; } }

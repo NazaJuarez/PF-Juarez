@@ -1,0 +1,19 @@
+//Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//importando archivos secundarios
+
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "layout/body";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+@import "views/juegos";
+@import "views/noticias";
+@import "views/eventos";
+@import "views/contacto";

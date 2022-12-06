@@ -1,0 +1,38 @@
+main{
+    .contenedor4{
+        display: inline;
+        max-width: 100%;
+    }
+    
+    h4{
+        @include estilosSubtitulosh2;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+    .mapa{
+        text-align: left;
+    }
+    
+    .formulario_contacto{
+        color: $color-texto-2;
+        font-size: 1rem;
+        padding: 20px;
+        display: block;
+        legend{
+            font-size: 0.7rem;
+        }
+    }
+
+    @include desktop{
+        .contenedor4{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 100%;            
+            margin: 50px;
+            padding: 20px;
+        }
+    }
+}

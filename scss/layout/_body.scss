@@ -1,0 +1,11 @@
+/*estilos del body*/
+body{
+    background-color: $color-fondo;
+    min-height: 100vw;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}

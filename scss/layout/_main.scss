@@ -1,0 +1,95 @@
+main{
+    .informacion_nombre{
+        @include estilosTitulos;
+        @include flex;
+        font-size: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 30px;
+        animation-name: img-name;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 1s;
+        @keyframes img-name {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.3);
+        }
+        }}
+        .containertitulo{
+            @include flex;
+            flex-direction: column
+        }
+        h2{
+            @include estilosSubtitulosh2;
+            @include flex;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        .informacion-servicios-mobile{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        h3{
+            @include estilosSubtitulosh3;
+            @include flex;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        #p_main p{
+            @include estilosTitulos;
+            @include flex;
+            font-size: 1em;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+        .row p{
+            @include estilosSubtitulosh2;
+            font-size: 20px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .container-op{
+            hr{
+                background-color: $color-texto;
+                height: 8px;
+            }
+        }
+
+      @include desktop{
+        header {
+            background-color: $color-texto;
+            display: block;
+            @include flex;
+        }
+    
+        .navbar nav a{
+            color: $color-texto-2;
+            font-size: 2rem;
+        }
+        .informacion-servicios-mobile{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .container{
+                margin-top: 0%;
+                margin-bottom: 2%;
+            }
+    
+            img:hover{
+                filter: drop-shadow(2px 2px 2px $color-texto-2);
+ 
+            }
+        }
+    }
+}
+
+

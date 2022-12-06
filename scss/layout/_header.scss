@@ -1,0 +1,26 @@
+/*estilos de header*/
+
+header{
+    background-color: $color-texto;
+    @include flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 1.5em;
+    .img-logo{
+        width: 120px;
+        height: 120px;
+    }
+    .navbar-img{
+        width: 3.4rem;
+    }
+    .navbar-brand{
+        align-items: center;
+    }
+    .navbar nav a{
+        color: $color-texto-2;
+    }
+    .container-fluid .navbar-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+}
