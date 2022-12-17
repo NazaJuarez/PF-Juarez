@@ -61,12 +61,11 @@
         bottom: 0;
         right: 0;
     }
-
+}
     @include desktop{
         /* Estilos del footer*/
         .pie-de-pagina .grupo-1{
             width: 100%;
-            max-width: 1200px;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -83,5 +82,5 @@
             margin-bottom: 20px;
         }
     }
-}
+
 

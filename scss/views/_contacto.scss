@@ -1,3 +1,35 @@
+/*Estilos del sitio Contacto*/
+section{
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 25px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .grid-item:nth-child(5){
+            grid-column-start: span 2;
+        }
+        .grid-item:nth-child(6){
+            grid-column-start: span 2;
+        }
+        .grid-item:nth-child(10){
+            grid-row-start: span 2;
+        }
+    }
+
+    @include desktop{
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(300px, 1fr));
+            grid-gap: 1em;
+            margin-top: 25px;
+        }
+    }   
+}
+
 main{
     .contenedor4{
         display: inline;
@@ -36,3 +68,10 @@ main{
         }
     }
 }
+
+
+
+
+
+
+

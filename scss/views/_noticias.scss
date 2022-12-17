@@ -1,8 +1,13 @@
+/*Estilos del sitio Noticias*/
 main{
     .contenedor3 img{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         max-width: 100%;
     }
+
     .foto4{
         width: 800px;
         height: 550px;
@@ -13,7 +18,7 @@ main{
         ul {
             li{
             @include estilosSubtitulosh2;
-            font-size: 2em;
+            font-size: 1em;
             padding-bottom: 30px;
             list-style: none;
             }
@@ -42,13 +47,26 @@ main{
             }
         }
     }
+    
+    @include desktop{
+
         .contenedor3 {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             max-width: 100%;
+            img{
+                max-width: 100%;
+                margin-top: 20px;
+            }
         }
-       
-    
+        .noticias {
+            ul {
+                li{
+                font-size: 2em;
+                }
+            }
+        }
+    }
 }
